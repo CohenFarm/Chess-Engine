@@ -18,7 +18,7 @@ class Piece
         virtual U64 pieceAttack(int square, int colour, U64 boardOccupancy) = 0;
         virtual void initSliderAttacks(){};
         U64 setOccupancy(int index, int bitsInMask, U64 attackMask);
-        virtual int getPositionInTable(int square) {};
+        virtual int getPositionInTable(int square) = 0;
 
     private:
 };
